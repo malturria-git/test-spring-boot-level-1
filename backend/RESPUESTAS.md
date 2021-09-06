@@ -6,6 +6,8 @@
 
 ### - Todas las validaciones fueron realizadas en el backend para que sea posible probar desde curl. El back necesita que el json llegue completo, es decir con tudas las keys. Los values pueden ser nulls y seran validados.
 
+### Utilice heroku para subir el front, apuntando a localhost:8080 https://test-spring-boot-level-1-altur.herokuapp.com/MenuPersona
+
 ### curl requests con token. Al momento de probar la app, deberá modificar ese dato con el token que reciba al hacer login.
 
 # **Autentización**
