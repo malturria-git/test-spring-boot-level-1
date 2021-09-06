@@ -1,0 +1,45 @@
+server:
+  port: 8080
+  servlet.context-path: /api
+
+spring:
+  profiles.active: mysql
+  application.name: ExamenTecso
+      
+---
+#DEV CONFIGURATION
+spring:
+  profiles: dev
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver: org.h2.Driver
+    username: sa
+
+---        
+#PROD CONFIGURATION
+spring:
+  profiles: qa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver: org.h2.Driver
+    username: sa
+    
+---    
+spring:
+  profiles: mysql
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/coop.tecso.examen 
+    username: root
+    password: admin
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true    
+    
