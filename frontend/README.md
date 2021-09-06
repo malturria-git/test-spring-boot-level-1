@@ -8,3 +8,5 @@ Los módulos que fueron instalados para este proyecto fueron:
 ### `npm install react-icons --save`
 ### `npm install --save styled-components`
 ### `npm install @mui/x-data-grid`
+
+## Todas las URLs apuntan a localhost:8080
