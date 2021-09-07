@@ -15,7 +15,7 @@ import coop.tecso.examen.security.JWTAuthorizationFilter;
 class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
-	/*protected void configure(HttpSecurity http) throws Exception {
+	protected void configure(HttpSecurity http) throws Exception {
 		http.cors().disable().csrf().disable()
 			.addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
 			.authorizeRequests()
@@ -25,9 +25,9 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.anyRequest().authenticated()
 			;
 	}
-	 */	
-	protected void configure(HttpSecurity http) throws Exception {
+	 	
+	/*protected void configure(HttpSecurity http) throws Exception {
 		http.cors().disable().csrf().disable()
 			;
-	}
+	}*/
 }
